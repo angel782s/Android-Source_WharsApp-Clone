@@ -49,13 +49,13 @@ android {
             minifyEnabled true
             proguardFiles  getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
 
-            buildConfigField("String", "MQTT_BROKER_URL", "\"tcp://192.168.0.100:1883\"")
+            buildConfigField("String", "MQTT_BROKER_URL", "\"tcp://192.168.0.101:1883\"")
             buildConfigField("String", "BACKEND_BASE_URL", "\"http://192.168.0.100:9001/api/v1/\"")
         }
         debug {
             jniDebuggable false
 
-            buildConfigField("String", "MQTT_BROKER_URL", "\"tcp://192.168.0.100:1883\"")
+            buildConfigField("String", "MQTT_BROKER_URL", "\"tcp://192.168.0.101:1883\"")
             buildConfigField("String", "BACKEND_BASE_URL", "\"http://192.168.0.100:9001/api/v1/\"")
         }
 
